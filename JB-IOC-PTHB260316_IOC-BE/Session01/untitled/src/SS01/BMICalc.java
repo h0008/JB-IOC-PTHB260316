@@ -9,7 +9,6 @@ public class BMICalc {
         System.out.print("Enter the weight of your body in meters (eg. 1,75m): ");
         float height = input.nextFloat();
         float BMI = weight / (height * height);
-        String BMIStr = String.format("%.2f", BMI);
-        System.out.println("The BMI is: " + BMI);
+        System.out.printf("The BMI is: %.2f", BMI);
     }
 }
