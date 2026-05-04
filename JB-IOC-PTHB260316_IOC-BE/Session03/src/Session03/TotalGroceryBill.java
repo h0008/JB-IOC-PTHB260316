@@ -4,7 +4,7 @@ import java.util.Scanner;
 import java.text.DecimalFormat;
 
 public class TotalGroceryBill {
-    public static void main(String[] args) {
+    static void main() {
         Scanner scanner = new Scanner(System.in);
         System.out.print("Customer name: ");
         String customerName = scanner.nextLine();
