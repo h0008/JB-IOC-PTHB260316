@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CopilotDiffPersistence">
+    <option name="pendingDiffs">
+      <map>
+        <entry key="$PROJECT_DIR$/src/Main.java">
+          <value>
+            <PendingDiffInfo>
+              <option name="filePath" value="$PROJECT_DIR$/src/Main.java" />
+              <option name="updatedContent" value="public class Main {&#10;    public static void main(String[] args) {&#10;        Rectangle rectangle = new Rectangle(5.0, 10.0);&#10;        &#10;        rectangle.printInfo();&#10;        System.out.println(&quot;Area: &quot; + rectangle.getArea());&#10;        System.out.println(&quot;Perimeter: &quot; + rectangle.getPerimeter());&#10;    }&#10;}&#10;" />
+            </PendingDiffInfo>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>
