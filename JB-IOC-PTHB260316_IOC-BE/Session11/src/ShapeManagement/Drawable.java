@@ -1,4 +1,4 @@
-package Session11;
+package ShapeManagement;
 
 public interface Drawable {
     void draw();

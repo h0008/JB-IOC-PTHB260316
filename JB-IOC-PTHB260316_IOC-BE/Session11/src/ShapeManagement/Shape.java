@@ -1,4 +1,4 @@
-package Session11;
+package ShapeManagement;
 
 public abstract class Shape {
     private String name;

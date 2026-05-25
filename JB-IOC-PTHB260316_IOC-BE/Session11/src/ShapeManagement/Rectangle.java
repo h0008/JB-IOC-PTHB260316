@@ -1,4 +1,4 @@
-package Session11;
+package ShapeManagement;
 
 public class Rectangle extends Shape implements Drawable {
     private double width;
