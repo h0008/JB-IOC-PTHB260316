@@ -7,89 +7,25 @@ import java.util.Scanner;
 class Order {
     private String orderCode;
     private String customerName;
-
-    public Order() {
-    }
-
-    public Order(String orderCode, String customerName) {
-        this.orderCode = orderCode;
-        this.customerName = customerName;
-    }
-
-    public String getOrderCode() {
-        return orderCode;
-    }
-
-    public void setOrderCode(String orderCode) {
-        this.orderCode = orderCode;
-    }
-
-    public String getCustomerName() {
-        return customerName;
-    }
-
-    public void setCustomerName(String customerName) {
-        this.customerName = customerName;
-    }
-
-    @Override
-    public String toString() {
-        return "Order code: " + orderCode + ", Customer name: " + customerName;
-    }
+    public Order() {}
+    public Order(String orderCode, String customerName) { this.orderCode = orderCode; this.customerName = customerName; }
+    public String getOrderCode() { return orderCode; }
+    public void setOrderCode(String orderCode) { this.orderCode = orderCode; }
+    public String getCustomerName() { return customerName; }
+    public void setCustomerName(String customerName) { this.customerName = customerName; }
+    @Override public String toString() { return "Order code: " + orderCode + ", Customer name: " + customerName; }
 }
 
-interface Manage<T> {
-    void add(T item);
-    void update(int index, T item);
-    void delete(int index);
-    void display();
-}
+interface Manage<T> { void add(T item); void update(int index, T item); void delete(int index); void display(); }
 
 class OrderManager implements Manage<Order> {
     private List<Order> orders;
-
-    public OrderManager() {
-        this.orders = new ArrayList<>();
-    }
-
-    @Override
-    public void add(Order item) {
-        orders.add(item);
-    }
-
-    @Override
-    public void update(int index, Order item) {
-        if (index >= 0 && index < orders.size()) {
-            orders.set(index, item);
-        }
-    }
-
-    @Override
-    public void delete(int index) {
-        if (index >= 0 && index < orders.size()) {
-            orders.remove(index);
-        }
-    }
-
-    @Override
-    public void display() {
-        if (orders.isEmpty()) {
-            System.out.println("No orders available.");
-            return;
-        }
-        for (int i = 0; i < orders.size(); i++) {
-            System.out.println((i + 1) + ". " + orders.get(i).toString());
-        }
-    }
-
-    public int findIndexByOrderCode(String orderCode) {
-        for (int i = 0; i < orders.size(); i++) {
-            if (orders.get(i).getOrderCode().equalsIgnoreCase(orderCode)) {
-                return i;
-            }
-        }
-        return -1;
-    }
+    public OrderManager() { this.orders = new ArrayList<>(); }
+    @Override public void add(Order item) { orders.add(item); }
+    @Override public void update(int index, Order item) { if (index >= 0 && index < orders.size()) orders.set(index, item); }
+    @Override public void delete(int index) { if (index >= 0 && index < orders.size()) orders.remove(index); }
+    @Override public void display() { if (orders.isEmpty()) { System.out.println("No orders available."); return; } for (int i = 0; i < orders.size(); i++) System.out.println((i + 1) + ". " + orders.get(i).toString()); }
+    public int findIndexByOrderCode(String orderCode) { for (int i = 0; i < orders.size(); i++) if (orders.get(i).getOrderCode().equalsIgnoreCase(orderCode)) return i; return -1; }
 }
 
 public class OrderManagement {
