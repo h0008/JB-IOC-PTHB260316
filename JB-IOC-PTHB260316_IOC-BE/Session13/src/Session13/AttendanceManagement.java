@@ -2,10 +2,6 @@ package Session13;
 
 import java.util.ArrayList;
 import java.util.List;
-package Session13;
-
-import java.util.ArrayList;
-import java.util.List;
 import java.util.Scanner;
 
 public class AttendanceManagement {
@@ -20,12 +16,14 @@ public class AttendanceManagement {
         public void setName(String name) { this.name = name; }
         @Override public String toString() { return "ID : " + id + " , Student name: " + name; }
     }
+
     public interface Manage<T> {
         void add(T item);
         void update(int index, T item);
         void delete(int index);
         void display();
     }
+
     static class AttendanceManager implements Manage<Student> {
         private final List<Student> students = new ArrayList<>();
         private int nextId = 1;
@@ -36,6 +34,7 @@ public class AttendanceManagement {
         @Override public void display() { if (students.isEmpty()) { System.out.println("No students in the attendance list."); return; } for (Student s : students) System.out.println(s.toString()); }
         public int findIndexById(int id) { for (int i = 0; i < students.size(); i++) if (students.get(i).getId() == id) return i; return -1; }
     }
+
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         AttendanceManager manager = new AttendanceManager();
@@ -93,39 +92,3 @@ public class AttendanceManagement {
         scanner.close();
     }
 }
-                    manager.display();
-                    System.out.print("Enter student id to delete: ");
-                    int idDelete = -1;
-                    try {
-                        idDelete = Integer.parseInt(scanner.nextLine());
-                    } catch (NumberFormatException e) {
-                        System.out.println("Invalid id.");
-                        break;
-                    }
-                    int idxDelete = manager.findIndexById(idDelete);
-                    if (idxDelete == -1) {
-                        System.out.println("No student found with id = " + idDelete);
-                        break;
-                    }
-                    manager.delete(idxDelete);
-                    System.out.println("Student deleted successfully.");
-                    break;
-
-                case 4:
-                    manager.display();
-                    break;
-
-                case 5:
-                    System.out.println("Exiting...");
-                    break;
-
-                default:
-                    System.out.println("Invalid choice. Please try again.");
-            }
-
-        } while (choice != 5);
-
-        scanner.close();
-    }
-}
-
