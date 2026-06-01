@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/JB-IOC-PTHB260316.iml" filepath="$PROJECT_DIR$/.idea/JB-IOC-PTHB260316.iml" />
+      <module fileurl="file://$PROJECT_DIR$/JB-IOC-PTHB260316_IOC-BE/Session01/Session01.iml" filepath="$PROJECT_DIR$/JB-IOC-PTHB260316_IOC-BE/Session01/Session01.iml" />
+      <module fileurl="file://$PROJECT_DIR$/JB-IOC-PTHB260316_IOC-BE/Session06/Session06.iml" filepath="$PROJECT_DIR$/JB-IOC-PTHB260316_IOC-BE/Session06/Session06.iml" />
+      <module fileurl="file://$PROJECT_DIR$/JB-IOC-PTHB260316_IOC-BE/Session07/Session07.iml" filepath="$PROJECT_DIR$/JB-IOC-PTHB260316_IOC-BE/Session07/Session07.iml" />
+      <module fileurl="file://$PROJECT_DIR$/JB-IOC-PTHB260316_IOC-BE/Session09/Session09.iml" filepath="$PROJECT_DIR$/JB-IOC-PTHB260316_IOC-BE/Session09/Session09.iml" />
+      <module fileurl="file://$PROJECT_DIR$/JB-IOC-PTHB260316_IOC-BE/Session11/Session11.iml" filepath="$PROJECT_DIR$/JB-IOC-PTHB260316_IOC-BE/Session11/Session11.iml" />
+      <module fileurl="file://$PROJECT_DIR$/JB-IOC-PTHB260316_IOC-BE/Session12/Session12.iml" filepath="$PROJECT_DIR$/JB-IOC-PTHB260316_IOC-BE/Session12/Session12.iml" />
+      <module fileurl="file://$PROJECT_DIR$/JB-IOC-PTHB260316_IOC-BE/Session13/Session13.iml" filepath="$PROJECT_DIR$/JB-IOC-PTHB260316_IOC-BE/Session13/Session13.iml" />
+    </modules>
+  </component>
+</project>
